@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+   
+
+    <br><br>
+
+<!DOCTYPE html>
+<html>
+    <head>
+     <script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+<center><h1>Welcome to GIFTSAVER</h1>
+    
+    <h4><i>We help you save for your special gift</i></h4></center>
+  
+  </head>
+  
+ 
+
+
+   <p> Click <a href="/logout">here</a> to logout.</p>
+        
+
+<body>
+  <h3> Posts: </h3>
+    {% for post in posts %}
+     # <strong>Title: </strong> {{post.title}} <br>
+     # <strong>Post: </strong> {{ post.description }} <br> 
+  
+ </body>
+</html>
+{% endfor %}
+
+{% endblock %}
